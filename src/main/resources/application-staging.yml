@@ -1,0 +1,24 @@
+logging:
+  level:
+    root: info
+    com:
+      alexislavie:
+        coding:
+          assignment: info
+    org:
+      springframework: warn
+
+spring:
+  datasource:
+    data: classpath:/db/data/h2/populate.sql,classpath:/db/data/standard/populate.sql
+    initialization-mode: always
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  h2:
+    console:
+      enabled: true
+  profiles:
+    include: datasource-staging-h2

@@ -1,0 +1,27 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>be.care coding assignment: Pipeline Monitor</title>
+
+    <script charset="utf-8" src="js/sockjs-v1.3.0.min.js"></script>
+    <script charset="utf-8" src="js/stomp-v4.0.8.min.js"></script>
+    <script charset="utf-8" src="js/web-socket.js">
+
+    </script>
+</head>
+
+<body>
+<div>
+    <div>
+        <button id="connect-button" onclick="connect()">Connect</button>
+        <button disabled="disabled" id="disconnect-button" onclick="disconnect()">Disconnect</button>
+    </div>
+    <br/>
+    <div id="pipeline-status-collection">
+    </div>
+</div>
+</body>
+
+</html>

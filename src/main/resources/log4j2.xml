@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    <Properties>
+        <property name="consolePattern">[%highlight{%-5level}] | %d{ISO8601} | %r | %sn%n%highlight{%msg}%n</property>
+    </Properties>
+
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout charset="UTF-8"
+                           pattern="${consolePattern}"/>
+        </Console>
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO" additivity="false">
+            <AppenderRef ref="Console"/>
+        </Root>
+    </Loggers>
+</Configuration>

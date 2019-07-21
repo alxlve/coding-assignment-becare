@@ -1,0 +1,18 @@
+logging:
+  level:
+    root: debug
+    com:
+      alexislavie:
+        coding:
+          assignment: debug
+    org:
+      springframework: warn
+
+spring:
+  datasource:
+    data: classpath:/db/data/h2/populate.sql,classpath:/db/data/standard/populate.sql
+  h2:
+    console:
+      enabled: true
+  profiles:
+    include: datasource-dev-h2

@@ -1,0 +1,7 @@
+spring:
+  datasource:
+    name: coding_assignment_becare_dev
+    url: jdbc:h2:mem:coding_assignment_becare_dev;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    username: sa
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect

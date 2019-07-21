@@ -1,0 +1,28 @@
+logging:
+  level:
+    root: debug
+    com:
+      alexislavie:
+        coding:
+          assignment: trace
+    org:
+      hibernate:
+        stat: debug
+        type: trace
+      springframework: debug
+
+spring:
+  datasource:
+    data: classpath:/db/data/h2/populate.sql,classpath:/db/data/standard/populate.sql
+  h2:
+    console:
+      enabled: true
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+        generate_statistics: true
+        use_sql_comments: true
+    show-sql: true
+  profiles:
+    include: datasource-debug-dev-h2

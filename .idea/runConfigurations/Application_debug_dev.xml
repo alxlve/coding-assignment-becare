@@ -1,0 +1,11 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Application:debug-dev" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <module name="coding.assignment.becare" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.alexislavie.coding.assignment.becare.Application" />
+    <option name="ACTIVE_PROFILES" value="debug-dev" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <method v="2">
+      <option name="Make" enabled="true" />
+    </method>
+  </configuration>
+</component>

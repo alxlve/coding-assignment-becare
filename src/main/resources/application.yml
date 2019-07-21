@@ -1,0 +1,56 @@
+# https://docs.spring.io/spring-boot/docs/X.Y.Z.RELEASE/reference/htmlsingle/#common-application-properties
+
+application:
+  api:
+    restBasePath: /api
+    webSocketEndPoint: /api/ws
+    webSocketTopicDestinationPrefix: /topic
+
+logging:
+  level:
+    root: info
+    com:
+      alexislavie:
+        coding:
+          assignment: info
+    org:
+      springframework: error
+
+server:
+  compression:
+    enabled: true
+    mime-types: text/html, text/xml, text/plain, text/css, text/javascript,
+      application/javascript, application/json, application/xml,
+      application/vnd.ms-fontobject, application/x-font-opentype, application/x-font-ttf,
+      image/x-icon, image/svg+xml
+    min-response-size: 2048
+  error:
+    whitelabel:
+      enabled: false
+  servlet:
+    context-path: /
+
+spring:
+  datasource:
+    sql-script-encoding: UTF-8
+  flyway:
+    enabled: false
+    locations: classpath:db/migration/{vendor}
+  h2:
+    console:
+      enabled: false
+  jackson:
+    deserialization:
+      fail_on_null_for_primitives: true
+      fail_on_numbers_for_enums: true
+    serialization:
+      write-dates-as-timestamps: false
+  jpa:
+    hibernate:
+      use-new-id-generator-mappings: true
+    properties:
+      hibernate:
+        jdbc:
+          time_zone = UTC
+  profiles:
+    active: dev

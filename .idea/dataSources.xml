@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="coding_assignment_becare_debug_dev" uuid="5c7a33da-0fbc-48ec-9ab4-ca1512d0c221">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:file:$PROJECT_DIR$/.h2/coding_assignment_becare_debug_dev;AUTO_SERVER=TRUE</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="coding_assignment_becare_staging" uuid="4c447ba5-cc84-4c93-b1ae-2537d8b4588e">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:file:$PROJECT_DIR$/.h2/coding_assignment_becare_staging;AUTO_SERVER=TRUE</jdbc-url>
+    </data-source>
+    <data-source source="LOCAL" name="coding_assignment_becare_prod" uuid="934fe666-bade-4c7f-bdcc-ba2f444bb094">
+      <driver-ref>h2.unified</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.h2.Driver</jdbc-driver>
+      <jdbc-url>jdbc:h2:file:$PROJECT_DIR$/.h2/coding_assignment_becare_prod;AUTO_SERVER=TRUE</jdbc-url>
+    </data-source>
+  </component>
+</project>

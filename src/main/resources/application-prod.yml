@@ -1,0 +1,20 @@
+logging:
+  level:
+    root: info
+    com:
+      alexislavie:
+        coding:
+          assignment: info
+    org:
+      springframework: warn
+
+spring:
+  datasource:
+    initialization-mode: never
+  flyway:
+    enabled: true
+  jpa:
+    hibernate:
+      ddl-auto: validate
+  profiles:
+    include: datasource-prod-h2
